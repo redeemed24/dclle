@@ -1,0 +1,23 @@
+tbl_rockgroup (done)
+ - rg_id
+ - rg_name
+
+tbl_rockage (done)
+ - ra_id
+ - ra_name
+
+tbl_maplegend (to be added)
+ - ra_id (nullable for soil FK)
+ - rg_id (nullable for soil FK)
+ - sl_id (nullable for rock FK)
+
+tbl_soillayer (done)
+ - sl_id
+ - sl_firstlayer (string separated by %) ss_id%ss_id%ss_id   - no limit 
+ - sl_secondlayer (string separated by %) ss_id%ss_id%ss_id   - no limit
+ - sl_thirdlayer (string separated by %) ss_id%ss_id%ss_id   - no limit
+ - sl_fourthlayer (string separated by %) ss_id%ss_id%ss_id   - no limit
+
+tbl_soilsymbol (structure & consistency & texture) (done)
+ - ss_id
+ - ss_name

@@ -1,0 +1,207 @@
+body{
+    background-color:#225068;
+    margin:2px;
+}
+
+@media (min-width: 240px){    
+    #send{ /*send button*/
+	background-image: url('../images/send_20.png');
+    }
+    
+    #submit_file{ /*attach file button*/
+	background-image: url('../images/attach.png');
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){    
+    #send{ /*send button*/
+	background-image: url('../images/send_32.png');
+    }
+    
+    #submit_file{ /*attach file button*/
+	background-image: url('../images/attach_48.png');
+    }
+}
+
+@media (min-width: 768){    
+    #send{ /*send button*/
+	background-image: url('../images/send_48.png');
+    }
+    
+    #submit_file{ /*attach file button*/
+	background-image: url('../images/attach_64.png');
+    }
+}
+
+
+/*******************************************COMMON**********************************************************/
+
+    #received{ /*display messages*/
+	position: relative;
+	overflow-y:scroll;
+	overflow-x: hidden;
+	background-color:#f7f7f7;
+	padding: 1% !important;
+    }
+    
+    #mess_content{ /*div for each message*/
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #828282;
+	height: auto;
+	width:50%;
+	margin-top:2%;
+	padding: 2%;
+	
+	font-family:calibri;
+	font-size:13px;
+	color:#272727;
+	word-wrap: break-word;
+    }
+    
+    #mess_date{ /*date sent*/
+	color:  gray;
+	text-align: right;
+	font-size: xx-small;
+    }
+    
+    .received_pop{
+	width: 95%;
+	height: 80% !important;
+	margin: auto;
+	border:1px solid #1b3f52;
+    }
+    
+    .you{ /*div from your messages*/
+	float: left;
+	background-color: #ffffff;
+    }
+    
+    .me{ /*div from ka chat messages*/
+	float: right;
+	background-color: #aefb46/*74b1d2*/;
+    }
+    
+    #text_cont{
+	background-color: inherit;
+	border: none;
+	height: inherit;
+	width: 100%;
+	overflow:hidden;
+    }
+/**************************************************************text area*******************************************************************/
+
+    #textWrap{ /*wrapper for textarea, send and attach file*/
+	position:relative;
+	margin:auto;
+    }
+    
+    .text_pop{ /*class wrapper for text area, send and attach file pop up window*/
+	width:96.5%;
+	height:16% !important;
+	padding:1% !important;
+    }
+    
+    #text{ /*text area*/
+	position: relative;
+	float:left;
+	width: 71%;
+	height: 97%;
+	border: none;
+	padding:1%;
+	outline:none;
+	
+	font-family:calibri;
+	font-size:13px;
+	color:#272727;
+    }
+    
+    #send{ /*send button*/
+	position:relative;
+	float:left;
+	width:28%;
+	height:48%;
+	margin-left:1%;
+	border:none;
+	cursor:pointer;
+	outline:none;
+	
+	background-color:#81bec5;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:20% 50%;
+	box-shadow:1px 1px 2px #13363e;
+    }
+    
+    #send:hover{
+	background-color:#b8dade;
+    }
+    
+    #submit_file{ /*attach file button*/
+	position:relative;
+	float:left;
+	width:28%;
+	height:48%;
+	margin-top:1px;
+	margin-left:1%;
+	border:none;
+	cursor:pointer;
+	outline:none;
+	
+	background-color:#81bec5;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:20% 50%;
+	box-shadow:1px 1px 2px #13363e;
+    }
+    
+    #submit_file:hover{
+	background-color:#b8dade;
+    }
+    
+
+/**********************************************************************upload files*****************************************************************/
+    #overlay{ /*div upload files*/
+	    z-index: 2;
+	    display: none;
+	    background-color: #000000;
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    top: 0px;
+	    left: 0px;
+	    text-align: center;
+	    color: white;
+	    zoom: 1;
+	    filter: alpha(opacity=75);
+	    opacity:0.75;
+    }
+    
+    #uploader_file{ /*uploader gif*/
+	z-index: 2;
+	position:fixed;
+	background-color:#000000;
+	background-position:center center;
+	opacity:0.75;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-image:url('../images/loader.gif');
+	display: none;
+    }
+    
+    #error_file{ /*error*/
+	z-index: 2;
+	position:fixed;
+	background-color:#000000;
+	background-position:center center;
+	display: none;
+	opacity:0.75;
+	background-repeat:no-repeat;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-image:url('../images/error.png');
+    }

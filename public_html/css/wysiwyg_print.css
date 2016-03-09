@@ -1,0 +1,79 @@
+@media screen{ /*wysiwyg editor*/
+    #wysi_div{
+        width: 100%;
+        height: auto;
+        font-size: small;
+        margin-top: 5%;
+    }
+        #wysi_textarea{
+            height: 250px;
+        }
+        
+        #cert_buttons{ /*button send and update*/
+            margin-top: 2px;
+            width: 50%;
+            height: 45px;
+            bottom: 0;
+            position: relative;
+            margin-left: 20%;
+        }
+        
+            #cert_buttons input[type=submit]{
+                padding:5px 15px;
+                background:#ccc;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                width: 49%;
+                height: 100%;
+                margin-right: 1px;
+                margin-left: 1px;
+                border: 2px solid #ccc;
+            }
+        
+        
+        #wysi_input{ /*name*/
+            padding:5px;
+            border:2px solid #ccc; 
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        
+            #wysi_input:focus, #cert_buttons input[type=submit]:hover{
+                border-color:#225068 !important;
+            }
+        
+        #file_title{ /*title*/
+           float: right;
+           width: 50%;
+        }
+}
+
+@media print { /*print certificate*/
+    @page {
+        size: letter portrait;
+        margin: 1.0cm;
+        margin-top: 0.1cm !important;
+        margin-bottom: 0.1cm !important;
+    }
+    
+    body{
+        font-size: 12pt;
+    }
+    
+    #table_cert{ /*table*/
+        width: 100%;
+    }
+    
+        #content_cert{
+            min-height: 7.3in;
+        }
+    
+        #print_footer{
+            position: static;
+            width: 100%;
+            font-size: 11pt;
+            text-align: center;
+            border-top: solid black;
+        }
+}

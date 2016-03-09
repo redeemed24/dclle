@@ -1,0 +1,301 @@
+#cert_files{ /*file management*/
+    z-index: 4;
+    display: none;
+    background-color: #313131;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity:0.40;
+    font-family: calibri !important;
+}
+    
+    #file_drpdwn{
+        float: left;
+        width: 150px;
+        border: solid 1px !important;
+    }
+    
+    /*first*/
+    @media (min-width: 1200px)
+    {
+    #cert_wrap{
+        display: none;
+        z-index: 5;
+        background-color: #ffffff !important;
+        height: 50%;
+        width: 50%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 25%;
+        padding: 0px;
+    }
+    }
+    /*second*/
+    @media (min-width: 1000px) and (max-width:1199px)
+    {
+    #cert_wrap{
+        display: none;
+        z-index: 5;
+        background-color: #ffffff !important;
+        height: 50%;
+        width: 70%;
+        position: absolute;
+        margin-top: 7%;
+        margin-left: 15%;
+        padding: 0px;
+    }
+    }
+    /*third*/
+    @media (min-width: 768px) and (max-width:999px)
+    {
+    #cert_wrap{
+        display: none;
+        z-index: 5;
+        background-color: #ffffff !important;
+        height: 50%;
+        width: 90%;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 5%;
+        padding: 0px;
+    }
+    }
+    /*fourth*/
+    @media (min-width: 321px) and (max-width:767px)
+    {
+    #cert_wrap{
+        display: none;
+        z-index: 5;
+        background-color: #ffffff !important;
+        height: 50%;
+        width: 95%;
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 2.5%;
+        padding: 0px;
+    }
+    
+    #search_files{
+        width:28% !important;
+    }
+    
+    #print_reports{
+        display:none !important;
+    }
+    }
+     /*fifth*/
+    @media (max-width:320px)
+    {
+    #cert_wrap{
+        display: none;
+        z-index: 5;
+        background-color: #ffffff !important;
+        height: 50%;
+        width: 95%;
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 2.5%;
+        padding: 0px;
+    }
+    }
+    
+    #cert_header{
+        float: left;
+        width: 100%;
+        height: 32px;
+        float: left;
+        background-color: #225068;
+    }
+    
+    #cert_header label{
+        float:left;
+        margin-top:8px;
+        margin-left:2%;
+        
+        font-family:calibri;
+        font-size:14px;
+        color:#ffffff;
+    }
+    
+    #cert_wrap span{
+        float: left;
+        width: 80%;
+        height: auto;
+        padding-left: 20%;
+        margin-bottom: 10px;
+    }
+    
+    #note_span{
+        float: left;
+        width: 80%;
+        height: auto;
+        padding-left: 20%;
+        margin-top: 10px;
+        font-family: Calibri;
+        font-size: 10px;
+        color: #fd0000;
+    }
+    
+    #close_files{
+        float: right;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        margin-top: 7px;
+        opacity: 0.60;
+        cursor: pointer;
+        font-family: calibri;
+        font-size: 13px;
+        color: #ffffff;
+    }
+    
+    #close_files:hover{
+        opacity: 1;
+    }
+        
+        #print_reports{
+            float: right;
+            background-image: url('../images/print_reports.png');
+            background-color:transparent;
+            width: 20px;
+            height: 24px;
+            border: none;
+            background-repeat: no-repeat;
+            margin-right: 25%;
+            margin-top: 6px;
+        }
+        
+        #search_files{
+            width: 22%;
+            height: 27px;
+            background-color: #4898c4;
+            border: solid 1px #f2f2f2;
+            color: #ffffff;
+            outline: none;
+            cursor:pointer;
+        }
+        
+        #search_files:hover{
+            background-color: #7eb7d6;
+            outline: none;
+        }
+
+        #cert_wrap select{ /*dropdown search by month or by year*/   
+            width: 22%;
+            height: 28px;
+            margin-right: 10px;
+        }
+
+        #certwrap_table{
+            width: 100%;
+            font-weight: bold;
+            color: black !important;
+        }
+        
+        #cert_list{
+            float: left;
+            width: 100%;
+            height: 72%;
+            position: relative;
+            overflow-y: auto;
+        }
+        
+            #div_empty{
+                float: left;
+                width: 60%;
+                background-color: #f2f2f2;
+                padding-left: 40%;
+                margin-top: 50px;
+                color: #4a4a4a;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-top: solid 1px #c7c7c7;
+                border-bottom: solid 1px #c7c7c7;
+            }
+        
+                .cert_table table{
+                    border:solid 1px;
+                    border-spacing: 0;
+                    width:100%;
+                    height:100%;
+                    margin:0px;padding:0px;
+                    table-layout: fixed;
+                    border-left: none !important;
+                    border-right: none !important;
+                    border-top: solid 1px #c0c0c0;
+                    border-bottom: solid 1px #c0c0c0;
+                }
+        
+                    .cert_table table th{
+                        height: 25px;
+                        background-color: #ffffff !important;
+                        border-left: solid 1px #c0c0c0;
+                        font-weight: 900;
+                        font-family: Calibri;
+                        font-size: 13px;
+                        color: #272727 !important;
+                    }
+                    
+                    .cert_table table th:last-child{
+                        border-right: solid 1px #c0c0c0;
+                    }
+                    
+                    .cert_table tr:hover td{
+                        background-color:  #3a85ad;
+                    }
+                    
+                    .cert_table tr:nth-child(odd){
+                        background-color:#e5e5e5;
+                    }
+                    
+                    .cert_table tr:nth-child(even){
+                        background-color:#ffffff;
+                    }
+                    
+                    .cert_table td{
+                        vertical-align:middle;
+                        border-width:0px 1px 1px 0px;
+                        text-align:left;
+                        font-size: small;
+                        color: inherit;
+                        
+                        white-space:nowrap;
+                        overflow:hidden;
+                        text-overflow: ellipsis;
+                        border: solid 1px #c0c0c0;
+                        border-bottom: none;
+                        border-right: none;
+                    }
+                    
+                    .cert_table td a{
+                        float:left;
+                        width:100%;
+                        height:inherit;
+                        padding:7px;
+                    }
+                    
+                    .cert_table td:first-child{
+                        border-left: solid 1px #c0c0c0;
+                    }
+                    
+                    .cert_table td:last-child{
+                        border-right: solid 1px #c0c0c0;
+                    }
+                    
+                        .file_link{ /*send files*/
+                            color: inherit;
+                            text-decoration: none;
+                        }
+    
+                        .files_draft{ /*draft files*/
+                            color: red !important;
+                        }
+                        
+                        .files_draft:hover{
+                            background-color: #3a85ad;
+                            color: #ff9393 !important;
+                        }
+
+
